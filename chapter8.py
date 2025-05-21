@@ -1,4 +1,4 @@
-def greet_user():
+ef greet_user():
     """Saying Hello"""
     print("Hello Python Functions!")
     
