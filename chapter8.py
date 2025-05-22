@@ -47,3 +47,10 @@ def car_dic(name, model):
 
 my_car = car_dic('Honda', '2024')
 print(f'\n{my_car}\n')
+
+def house(size: int, location): # indicationg size to be
+    """Function returns a houes's size and location as a dictionary"""
+    house_info = {'house_size': size, 'house_location': location}
+    return house_info
+
+print(house(300, 'Riyadh'))
