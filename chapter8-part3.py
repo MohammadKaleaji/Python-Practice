@@ -17,3 +17,37 @@ add_unprinted(printed[:], unprinted) # the [:] says to python that the edits was
 show_printed(unprinted)              # and keep the original items of printed list in line 1
 
 print(printed) #Testing [:]
+
+# Passing arbitary argument to dunction
+
+def pizza(*toppings):
+     """Print topiings of Pizza"""
+     print(toppings)
+     
+pizza('mashrom', 'sauce', 'peproni')
+
+# mixing positional and aribitary arguments 
+
+# def make_pizza(size, *toppings):
+#      """print Pizza Info"""
+#      for topping in toppings:
+#           print(f"- {topping}") # to print (*toppings) with its unknown length 
+#      print(f"You have ordered a {size} and {toppings} topings")
+#     
+# make_pizza('Large', 'ketchep', 'mayo', 'bbq')
+
+def make_pizza(size, *toppings):
+    """Print Pizza Info (size can be str or int)"""
+    for topping in toppings:
+        print(f"- {topping}")
+    print(f"You have ordered a {size}-inch pizza with toppings: {toppings}")
+
+make_pizza('Large', 'ketchup', 'mayo', 'bbq')  # Now size accepts strings
+
+def build_profile(first, last, **info):
+     info['first_name'] = first
+     info['last_name'] = last
+     return info
+
+user1 = build_profile('Mohammad', 'Kaleaji', location = 'istanbul', career = 'SQA')
+print(user1)
