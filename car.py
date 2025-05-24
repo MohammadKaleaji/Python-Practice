@@ -19,6 +19,8 @@ class Car:
             self.odometer = milege
         else:
             print("You Can't Roll-Back the Odometer read! ")
+    def increment_odometer(self, milege):
+        self.odometer += milege
         
     
 my_car = Car('Lexus', 'EX', 2020)
@@ -27,5 +29,8 @@ print(my_car.car_descriptive())
 my_car.odometer = 20
 my_car.read_odometer()
 
-my_car.update_odometer(19)
+my_car.update_odometer(19) # Won't apply becuase using update and value less than 20 not acceptable
+my_car.read_odometer()
+
+my_car.increment_odometer(30)
 my_car.read_odometer()
