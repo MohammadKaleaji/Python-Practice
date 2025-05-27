@@ -1,0 +1,6 @@
+1. mkdir modules , and home.py
+2. in modules file , create 4 python files:
+     - main ""Company"" Class --> file 1
+     - inherit from file 1 and , make second file for "Tech Company" --> file 2
+     - inherit from file 1 and , make third file for "Health Services Company" --> file 3
+     - inherit from file 1, 2 and 3 --> make second file for "start-up" that -- > file 4
